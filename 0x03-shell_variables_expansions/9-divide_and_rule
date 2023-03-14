@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(bc -l <<< "$POWER / $DIVIDE")
+echo "$POWER / $DIVIDE" | awk '{printf "%.2f\n", $1}'
